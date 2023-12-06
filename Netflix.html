@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="icon" href="images/Netflix_Symbol_PMS.png">
+    
+    <title>Netflix</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: white;
+           
+        }
+
+        .container, .container1 ,.container2 {
+             /* 100% of the viewport width */
+            height: 560px; /* 100% of the viewport height */
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            background-size:cover; /* Cover the entire container */
+            border-bottom: 10px solid rgb(45, 45, 45);
+        }
+        .container {
+            height: 700px;
+            background-color: rgba(0,0,0,0.9);
+            background-image:linear-gradient(to right, rgba(0, 0, 0,0.95), rgba(0, 0, 0,0.75),transparent), url("images/netflix.jpg");
+     
+
+            /* background-attachment: fixed; */
+        }
+        .container1 { 
+            background-image: url("images/cp.png");
+            /* background-attachment: fixed; */
+        }
+        img.align-left {
+            
+            width: 530px;
+            height: 540px;
+            margin: 5px auto; 
+        }
+
+        h1 {
+            font-weight: bold;
+            font-style: italic;
+
+        }
+        .box-text-container {
+            width: 940px;
+            height: 500px;
+            margin: 10px auto;
+            padding: 25px;
+            
+
+        }
+        a.link-button{
+            
+            
+            color: white;
+            display: inline-block;
+            height: 36px;
+
+        }
+        a#btn-hover:hover {
+        
+            background-image: url('test.jpg');
+        }
+        a#bt-hover:active {
+            background-color: blue;
+        }
+        .nav {
+            height: 120px;
+            
+            padding: 0px 48px;
+            display: flex;
+            align-items: center;
+        }
+        .nav-logo {
+            width:15%;
+        }
+        .sign-in {
+            display: flex;
+            padding: 10px 20px;
+            margin-left:auto;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+        .sign-in:hover {
+            background-color: rgb(249, 66, 66);
+        }
+        .sign-in:active {
+            background-color: brown;
+        }
+        .content {
+            width: 1176px;
+            height: 490px;
+            margin: 50px;
+        }
+        .slogan {
+            width: 45%;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 350%;
+            margin:50px;
+            margin-bottom: 0px;
+            padding: 32px;
+        }
+        .notice{
+            width: 45%;
+            margin:0px 0px 0px 50px;
+            padding: 32px;
+            font-family: sans-serif;
+            
+        }
+        .form-control {
+            width: 390px;
+            margin:0px 0px 0px 50px;
+            display: inline;
+            align-items: center;
+        }
+        .form-input {
+            width:35%;
+            margin:0px 0px 0px 35px;
+            padding: 20px 16px ;
+            background-color: transparent;
+            border: 1px solid rgb(117, 117, 117);
+            color: white;
+            
+        }
+        .btn {
+            
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            margin-left: 10px;
+            padding:20px 20px ;
+            font-size: 100%;
+            font-weight: bold;
+        }
+        .form-input:focus {
+            background-color: transparent;
+        }
+        .btn:hover {
+            background-color: rgb(249, 66, 66);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+      <div class="nav">
+            <img src="images/Netflix_Logo.png" class="nav-logo" alt="">
+            <button class="sign-in">Sign In</button>
+      </div> 
+      <div class="content">
+        <div class="slogan">
+            Unlimited movies, TV shows, and more
+        </div>
+        <span class="notice">
+            Starts at USD 2.99. Cancel anytime. 
+        </span>
+        <p class="notice">
+            Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <form class="form-control">
+            <input  class="form-input" required type="email" placeholder="Email Address">
+            <button class="btn">Get Started</button>
+        </form>
+      </div> 
+    </div>
+    <div class="container1">
+        <img class="align-left" src="images/tlou.png" alt="">
+        <div class="box-text-container">
+             The last of us
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quod a, facilis quaerat laboriosam possimus iure odit hic rem voluptatibus magni blanditiis? Molestias fuga asperiores, at officiis rerum dolores facilis
+        </div>
+        
+    </div>
+    <div class="container2">
+       <a href="" class="link-button" id="btn-hover">Add to Basket</a>
+    </div>
+</body>
+</html>
